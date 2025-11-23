@@ -63,6 +63,13 @@ Push-Location             # Save current location
 Pop-Location              # Return to saved location
 
 # File Management
+
+# -Recurse let's you delete everything within a directory not just the directory itself
+# -Force let's you override any special restrictions, .git contains hidden and read-only files that are protected
+
+Remove-Item "C:\Users\shane\projects\test_build" -Recurse -Force 
+
+
 New-Item                   # Create file/folder
 Remove-Item (rm, del)      # Delete items
 Copy-Item (cp)            # Copy items
